@@ -1,0 +1,14 @@
+<!--
+Owner: Silvio Maeta
+NOTES:
+-->
+<launch>
+
+    <!-- Generate plots using odometry data -->
+    <node name="generate_plots" pkg="plot_util" type="generate_plots.py" output="screen">
+        <param name="output_filename" value="odometry_data_plot.pdf"/>
+        <param name="pose_topic" value="/pose" />    
+    </node>
+
+</launch>
+
